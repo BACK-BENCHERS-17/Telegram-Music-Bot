@@ -12,7 +12,7 @@ API_HASH = getenv("API_HASH", "26100c77cee02e5e34b2bbee58440f86")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 OWNER_ID = int(getenv("OWNER_ID", 7804972365))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "BACK_BENCHERS17")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "BACK_BENCHERS_x17")
 BOT_USERNAME = getenv("BOT_USERNAME", "DixitaMusicBot")
 BOT_NAME = getenv("BOT_NAME", "𝘿𝙞𝙭𝙞𝙩𝙖 ✘ 𝙈𝙪𝙨𝙞𝙘 🎶")
 ASSUSERNAME = getenv("ASSUSERNAME", "ownerofvibes")
@@ -43,13 +43,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ───── Git & Updates ───── #
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/bisug/DixitaMusicBot")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/BACK-BENCHERS-17/Telegram-Music-Bot")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN")
 
 # ───── Support & Community ───── #
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dear_sumi")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/SuMelodyVibes")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BACK_BENCHERS_170908")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Sonix_Support")
 
 # ───── Assistant Auto Leave ───── #
 AUTO_LEAVING_ASSISTANT = False
