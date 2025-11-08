@@ -1,6 +1,6 @@
 import asyncio
 import importlib
-import subprocess
+from pyrogram.errors.exceptions.flood_420 import FloodWait
 
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
@@ -47,7 +47,12 @@ async def init():
     except Exception as e:
         LOGGER("Tune").warning(f"ғᴀɪʟᴇᴅ ᴛᴏ ʟᴏᴀᴅ ʙᴀɴɴᴇᴅ ᴜsᴇʀs: {e}")
 
-    await app.start()
+    try:
+        await app.start()
+    except FloodWait as e:
+        LOGGER(__name__).warning(f"Telegram FloodWait: Waiting for {e.value} seconds before retrying app start.")
+        await asyncio.sleep(e.value)
+        await app.start() # Retry after waiting
 
     for all_module in ALL_MODULES:
         importlib.import_module("Tune.plugins" + all_module)
