@@ -1,0 +1,6 @@
+  - type: worker
+    name: Tune 
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 -m Tune
+    autoDeploy: true
